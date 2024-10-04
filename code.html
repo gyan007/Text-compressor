@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+  .dropdown {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dropdown-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none; /* Hide the content by default */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none; /* No top border for the content */
+}
+
+.dropdown-content ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="color:blue">Code Snippets:</h1>
+    <div class="dropdown">
+        <div class="index">
+            <h3 class="dropdown-header" style="color:purple">index.html</h3>
+            <div class="dropdown-content">
+                <ul>
+                    <li><img src="code_snippets/index/text-1.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/index/text-2.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/index/text-3.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/index/text-4.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/index/text-5.png" style="width: 900px; height: 900px;"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <h3 class="dropdown-header" style="color:purple">info.html</h3>
+            <div class="dropdown-content">
+                <ul>
+                    <li><img src="code_snippets/info/text-1.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/info/text-2.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/info/text-3.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/info/text-4.png" style="width: 900px; height: 900px;"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="styles">
+            <h3 class="dropdown-header" style="color:purple">styles.css</h3>
+            <div class="dropdown-content">
+                <ul>
+                    <li><img src="code_snippets/styles/text-1.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/styles/text-2.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/styles/text-3.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/styles/text-4.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/styles/text-5.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/styles/text-6.png" style="width: 900px; height: 900px;"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="script">
+            <h3 class="dropdown-header" style="color:purple">script.js</h3>
+            <div class="dropdown-content">
+                <ul>
+                    <li><img src="code_snippets/script/text-1.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/script/text-2.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/script/text-3.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/script/text-4.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/script/text-5.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/script/text-6.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/script/text-7.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/script/text-8.png" style="width: 900px; height: 900px;"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="heap_implementation">
+            <h3 class="dropdown-header" style="color:purple">heap_implementation.js</h3>
+            <div class="dropdown-content">
+                <ul>
+                    <li><img src="code_snippets/heap_implementation/text-1.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/heap_implementation/text-2.png" style="width: 900px; height: 900px;"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="codec_implementation">
+            <h3 class="dropdown-header" style="color:purple">codec_implementation.js</h3>
+            <div class="dropdown-content">
+                <ul>
+                    <li><img src="code_snippets/codec_implementation/text-1.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/codec_implementation/text-2.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/codec_implementation/text-3.png" style="width: 900px; height: 900px;"></li>
+                    <li><img src="code_snippets/codec_implementation/text-4.png" style="width: 900px; height: 900px;"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="#" id="pageUpButton" title="Scroll to top">
+        <img src="assets/up.png" alt="Up" style="width: 30px; height: 30px;">
+    </a>
+    <script>
+        document.getElementById("pageUpButton").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scroll
+            });
+        });
+
+        document.querySelectorAll('.dropdown-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling; // Get the next sibling (the dropdown content)
+                if (content.style.display === "block") {
+                    content.style.display = "none"; // Hide if already visible
+                } else {
+                    content.style.display = "block"; // Show if hidden
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
