@@ -91,7 +91,33 @@
         <center><img src="images/info-images/lossless-lossy-data-compression.png" alt="haffman-tree-and-binary-code-example.jpeg" loading="lazy" height="130" width="60%"></center>
         
         <br>
-<h2 style="color:blue">Huffman Code:</h2>
+	<h2 style="color:blue">Greedy Algorithm:</h2>
+	    <ol>Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems. 
+            <ol>Following are some standard algorithms that are Greedy algorithms:
+<li>1) Kruskal’s Minimum Spanning Tree (MST): 
+In Kruskal’s algorithm, we create an MST by picking edges one by one. The Greedy Choice is to pick the smallest weight edge that doesn’t cause a cycle in the MST constructed so far
+</li>
+<li>
+2) Prim’s Minimum Spanning Tree: 
+In Prim’s algorithm also, we create a MST by picking edges one by one. We maintain two sets: a set of the vertices already included in MST and the set of the vertices not yet included. The Greedy Choice is to pick the smallest weight edge that connects the two sets
+</li>
+<li>
+3) Dijkstra’s Shortest Path: 
+Dijkstra’s algorithm is very similar to Prim’s algorithm. The shortest-path tree is built up, edge by edge. We maintain two sets: a set of the vertices already included in the tree and a set of the vertices not yet included. The Greedy Choice is to pick the edge that connects the two sets and is on the smallest weight path from the source to the set that contains not yet included vertices
+</li>
+<li>
+4) Huffman Coding: 
+Huffman Coding is a loss-less compression technique. It assigns variable-length bit codes to different characters. The Greedy Choice is to assign the least bit length code to the most frequent character.
+</li>
+The greedy algorithms are sometimes also used to get an approximation for Hard optimization problems. For example, Traveling Salesman Problem is an NP-Hard problem. A Greedy choice for this problem is to pick the nearest unvisited city from the current city at every step. These solutions don’t always produce the best optimal solution but can be used to get an approximately optimal solution.
+
+Here let us see one such problem that can be solved using Greedy algorithm</ol>
+
+An optimization problem can be solved using Greedy if the problem has the following property: 
+
+
+At every step, we can make a choice that looks best at the moment, and we get the optimal solution to the complete problem. </ol>
+       <h2 style="color:blue">Huffman Code:</h2>
         <ol>
             A <b>Huffman code</b> is a particular type of optimal prefix code that is commonly used for lossless data
             compression. The process of finding or using such a code proceeds by means of Huffman coding, an algorithm
@@ -150,80 +176,7 @@
         <li>Now the only thing we should do is starting from the head of Huffman Tree and from the beginning of the encoded data, each time we encounter 1 we go right and while we encounter 0, we go left through the Huffman Tree. When we reach at a leaf node, we obtain the symbol! Then we just start again from the head of Huffman Tree while moving forward on encoded data.</li>
          <li>Data compression is a topic of many applications and it has various different types of algorithms beside of “frequency based” Huffman Algorithm. You can check for “dictionary based” methods like LZ77 LZ78 LZW which are useful for image compression especially.</li>
     <br>
-    <h2 style="color:blue">Code Snippets:</h2>
-    <div class="dropdown">
-        <div class="index">
-            <h3 class="dropdown-header" style="color:purple">index.html</h3>
-            <div class="dropdown-content">
-                <ul>
-                    <li><img src="code_snippets/index/text-1.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/index/text-2.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/index/text-3.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/index/text-4.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/index/text-5.png" style="width: 900px; height: 900px;"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="info">
-            <h3 class="dropdown-header" style="color:purple">info.html</h3>
-            <div class="dropdown-content">
-                <ul>
-                    <li><img src="code_snippets/info/text-1.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/info/text-2.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/info/text-3.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/info/text-4.png" style="width: 900px; height: 900px;"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="styles">
-            <h3 class="dropdown-header" style="color:purple">styles.css</h3>
-            <div class="dropdown-content">
-                <ul>
-                    <li><img src="code_snippets/styles/text-1.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/styles/text-2.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/styles/text-3.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/styles/text-4.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/styles/text-5.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/styles/text-6.png" style="width: 900px; height: 900px;"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="script">
-            <h3 class="dropdown-header" style="color:purple">script.js</h3>
-            <div class="dropdown-content">
-                <ul>
-                    <li><img src="code_snippets/script/text-1.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/script/text-2.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/script/text-3.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/script/text-4.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/script/text-5.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/script/text-6.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/script/text-7.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/script/text-8.png" style="width: 900px; height: 900px;"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="heap_implementation">
-            <h3 class="dropdown-header" style="color:purple">heap_implementation.js</h3>
-            <div class="dropdown-content">
-                <ul>
-                    <li><img src="code_snippets/heap_implementation/text-1.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/heap_implementation/text-2.png" style="width: 900px; height: 900px;"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="codec_implementation">
-            <h3 class="dropdown-header" style="color:purple">codec_implementation.js</h3>
-            <div class="dropdown-content">
-                <ul>
-                    <li><img src="code_snippets/codec_implementation/text-1.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/codec_implementation/text-2.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/codec_implementation/text-3.png" style="width: 900px; height: 900px;"></li>
-                    <li><img src="code_snippets/codec_implementation/text-4.png" style="width: 900px; height: 900px;"></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
     <a href="#" id="pageUpButton" title="Scroll to top">
         <img src="assets/up.png" alt="Up" style="width: 30px; height: 30px;">
     </a>
